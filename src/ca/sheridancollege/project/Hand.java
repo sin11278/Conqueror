@@ -18,6 +18,8 @@ public class Hand {
         this.givenCards = new ArrayList<Card>();
     }
 
+ 
+
     /**
      * Add a second hand to this one.
      *
