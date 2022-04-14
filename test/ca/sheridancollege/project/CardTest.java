@@ -30,133 +30,136 @@ public class CardTest {
     }
 
     /**
-     * Test of getSuit method, of class Card.
+     * Test of getSuitGood  method, of class Card.
      */
     @Test
-    public void testGetSuit() {
-        System.out.println("getSuit");
+    public void testGetSuitGood() {
+        System.out.println("getSuitGood");
         Suit expected = CLUBS;
         Suit actual = aceClubs.getSuit();
         Assert.assertEquals(expected, actual);
     }
     
    /**
-     * Test of getSuit method, of class Card.
+     * Test of getSuitBad method, of class Card.
      */
     @Test
     public void testGetSuitBad() {
-        System.out.println("getSuit");
+        System.out.println("getSuitBad");
         Suit expected = HEARTS;
         Suit actual = aceClubs.getSuit();
         Assert.assertThat(expected, not(actual));
     }
     /**
-     * Test of getLetterofSuit method, of class Card.
+     * Test of getLetterofSuitGood method, of class Card.
      */
     @Test
     public void testGetLetterofSuitGood() {
-        System.out.println("getLetterofSuit");
+        System.out.println("getLetterofSuitGood");
         String expected = "C";
         String actual = aceClubs.getLetterofSuit();
         Assert.assertEquals(expected, actual);
     }
+    /**
+     * Test of getLetterofSuitBad method, of class Card.
+     */
     @Test
     public void testGetLetterofSuitBad() {
-        System.out.println("getLetterofSuit");
+        System.out.println("getLetterofSuitBad");
         String expected = "H";
         String actual = aceClubs.getLetterofSuit();
         Assert.assertThat(expected, not(actual));
     }
 
     /**
-     * Test of getRank method, of class Card.
+     * Test of getRankGood method, of class Card.
      */
     @Test
     public void testGetRankGood() {
-        System.out.println("getRank");
+        System.out.println("getRankGood");
          Rank expected = ACE;
          Rank actual = aceClubs.getRank();
          Assert.assertEquals(expected, actual);
     }
     /**
-     * Test of getRank method, of class Card.
+     * Test of getRankBad method, of class Card.
      */
     @Test
     public void testGetRankBad() {
-        System.out.println("getRank");
+        System.out.println("getRankBad");
          Rank expected = TWO;
          Rank actual = aceClubs.getRank();
          Assert.assertThat(expected, not(actual));
     }
     /**
-     * Test of getrankOfLetter method, of class Card.
+     * Test of getrankOfLetterGood method, of class Card.
      */
     @Test
     public void testGetrankOfLetterGood() {
-        System.out.println("getrankOfLetter");
+        System.out.println("getrankOfLetterGood");
         String expected = "A";
         String actual = aceClubs.getrankOfLetter();
         Assert.assertEquals(expected, actual);
     }
     /**
-     * Test of getrankOfLetter method, of class Card.
+     * Test of getrankOfLetterBad method, of class Card.
      */
     @Test
     public void testGetrankOfLetterBad() {
-        System.out.println("getrankOfLetter");
+        System.out.println("getrankOfLetterBad");
         String expected = "T";
         String actual = aceClubs.getrankOfLetter();
         Assert.assertThat(expected, not(actual));
     }
 
     /**
-     * Test of getCardPoints method, of class Card.
+     * Test of getCardPointsGood method, of class Card.
      */
     @Test
     public void testGetCardPointsGood() {
-        System.out.println("getCardPoints");
+        System.out.println("getCardPointsGood");
         Integer expected = 14;
         Integer actual = aceClubs.getCardPoints();
         Assert.assertEquals(expected, actual);
     }
     /**
-     * Test of getCardPoints method, of class Card.
+     * Test of getCardPointsBad method, of class Card.
      */
     @Test
     public void testGetCardPointsBad() {
-        System.out.println("getCardPoints");
+        System.out.println("getCardPointsBad");
         Integer expected = 20;
         Integer actual = aceClubs.getCardPoints();
          Assert.assertThat(expected, not(actual));
     }
 
     /**
-     * Test of getCard method, of class Card.
+     * Test of getCardGood method, of class Card.
      */
     @Test
     public void testGetCardGood() {
-        System.out.println("getCard");
+        System.out.println("getCardGood");
         String expected = "AC";
         String actual = aceClubs.getCard();
         Assert.assertEquals(expected, actual);
     }
     /**
-     * Test of getCard method, of class Card.
+     * Test of getCardBad method, of class Card.
      */
     @Test
     public void testGetCardBad() {
-        System.out.println("getCard");
+        System.out.println("getCardBad");
         String expected = "TW";
         String actual = aceClubs.getCard();
         Assert.assertThat(expected, not(actual));
     }
 
     /**
-     * Test of compareTo method, of class Card.
+     * Test of compareToGood method, of class Card.
      */
     @Test
     public void testCompareToGood() {
-        System.out.println("compareTo");
+        System.out.println("compareToGood");
         int expected = 0;
         Card card1 = aceClubs;
         Card card2 = aceClub;
@@ -164,11 +167,11 @@ public class CardTest {
         Assert.assertEquals(expected, actual);
     }
     /**
-     * Test of compareTo method, of class Card.
+     * Test of compareToBad method, of class Card.
      */
     @Test
     public void testCompareToBad() {
-        System.out.println("compareTo");
+        System.out.println("compareToBad");
         int expected = 1;
         Card card1 = aceClubs;
         Card card2 = aceClub;
@@ -177,25 +180,29 @@ public class CardTest {
     }
 
     /**
-     * Test of findSameSuit method, of class Card.
+     * Test of findSameSuitGood method, of class Card.
      */
     @Test
     public void testFindSameSuitGood() {
-        System.out.println("findSameSuit");
+        System.out.println("findSameSuitGood");
         Card card1 = aceClubs;
         Card card2 = aceClub;
         boolean actual = card1.findSameSuit(card2);
         Assert.assertTrue(actual);
     }
+    /**
+     * Test of findSameSuitBad method, of class Card.
+     */
      @Test
     public void testFindSameSuitbad() {
+        System.out.println("findSameSuitBad");
         Card card1 = aceClubs;
         Card card2 = aceHearts;
         boolean actual = card1.findSameSuit(card2);
         Assert.assertFalse(actual);
     }
     /**
-     * Test of findingSameRank method, of class Card.
+     * Test of findingSameRankGood method, of class Card.
      */
     @Test
     public void testFindingSameRankGood() {
@@ -207,7 +214,7 @@ public class CardTest {
     }
 
     /**
-     * Test of findingSameRank method, of class Card.
+     * Test of findingSameRankBad method, of class Card.
      */
     @Test
     public void testFindingSameRankBad() {
