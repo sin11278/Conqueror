@@ -30,20 +30,23 @@ public class RankTest {
         Assert.assertArrayEquals(expected, actual);
     }
     /**
-     * Test of getNameofRank method, of class Rank.
+     * Test of getNameofRankGood method, of class Rank.
      */
     @Test
     public void testGetNameofRankGood() {
-        System.out.println("getNameofRank");
+        System.out.println("getNameofRankGood");
        String expected = "Two";
         String actual = Rank.TWO.getNameofRank();
         Assert.assertEquals(expected, actual);
         // TODO review the generated test code and remove the default call to fail.
        
     }
+     /**
+     * Test of getNameofRankBad method, of class Rank.
+     */
     @Test
     public void testGetNameofRankBad() {
-        System.out.println("getNameofRank");
+        System.out.println("getNameofRankBad");
         String expected = "Three";
         String actual = Rank.TWO.getNameofRank();
        Assert.assertThat(expected, not(actual));
@@ -52,11 +55,11 @@ public class RankTest {
     }
 
     /**
-     * Test of getValue method, of class Rank.
+     * Test of getValueGood method, of class Rank.
      */
     @Test
     public void testGetValueGood() {
-        System.out.println("getValue");
+        System.out.println("getValueGood");
          int expected = 2;
         int actual = Rank.TWO.getValue();
         Assert.assertEquals(expected, actual);
@@ -64,11 +67,11 @@ public class RankTest {
       
     }
         /**
-     * Test of getValue method, of class Rank.
+     * Test of getValueBad method, of class Rank.
      */
     @Test
     public void testGetValueBad() {
-        System.out.println("getValue");
+        System.out.println("getValueBad");
          int expected = 3;
         int actual = Rank.TWO.getValue();
        Assert.assertThat(expected, not(actual));
@@ -77,7 +80,7 @@ public class RankTest {
     }
     
     /**
-     * Test of toString method, of class Rank.
+     * Test of toStringGood method, of class Rank.
      */
     @Test
     public void testToStringGood() {
@@ -88,7 +91,7 @@ public class RankTest {
        
     }
      /**
-     * Test of toString method, of class Rank.
+     * Test of toStringBad method, of class Rank.
      */
     @Test
     public void testToStringBad() {
