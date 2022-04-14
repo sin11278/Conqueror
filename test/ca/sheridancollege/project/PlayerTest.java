@@ -22,33 +22,33 @@ public class PlayerTest {
     }
 
     /**
-     * Test of getName method, of class Player.
+     * Test of getNameGood method, of class Player.
      */
     @Test
     public void testGetNameGood() {
-        System.out.println("getName");
+        System.out.println("getNameGood");
         String expected = "Nav";
         String actual = testPlayer.getName();
         Assert.assertEquals(expected, actual);
     }
          /**
-     * Test of getName method, of class Player.
+     * Test of getNameBad method, of class Player.
      */
     @Test
     public void testGetNameBad() {
-        System.out.println("getName");
+        System.out.println("getNameBad");
         String expected = "Dev";
         String actual = testPlayer.getName();
         Assert.assertThat(expected, not(actual));
     }
 
     /**
-     * Test of setName method, of class Player.
+     * Test of setNameGood method, of class Player.
      */
     @Test
     public void testSetNameGood() {
-        String expected = "Jeet";
-        testPlayer.setName("Jeet");
+        String expected = "JeetGood";
+        testPlayer.setName("JeetGood");
         String actual = testPlayer.getName();
         Assert.assertEquals(expected, actual);
         // TODO review the generated test code and remove the default call to fail.
@@ -56,7 +56,7 @@ public class PlayerTest {
     }
 
         /**
-     * Test of setName method, of class Player.
+     * Test of setNameBad method, of class Player.
      */
     @Test
     public void testSetNameBad() {
@@ -68,7 +68,7 @@ public class PlayerTest {
         
     }
     /**
-     * Test of getHand method, of class Player.
+     * Test of getHandGood method, of class Player.
      */
     @Test
     public void testSetHandGood() {
@@ -80,7 +80,7 @@ public class PlayerTest {
        
     }
     /**
-     * Test of getHand method, of class Player.
+     * Test of getHandBad method, of class Player.
      */
     @Test
     public void testSetHandBad() {
