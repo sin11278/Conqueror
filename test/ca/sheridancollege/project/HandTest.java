@@ -36,11 +36,11 @@ public class HandTest {
         handTest2.addingcardtoUpper(testCard3);
     }
     /**
-     * Test of fetch method, of class Hand.
+     * Test of fetch methodGood, of class Hand.
      */
     @Test
     public void testFetchGood() {
-        System.out.println("fetch");
+        System.out.println("fetchGood");
         List<Card> cards = handTest2.fetch(2);
         Assert.assertEquals(handTest2.sizeOfHand(), 1);
         Assert.assertEquals(cards.get(0), testCard3);
@@ -49,22 +49,22 @@ public class HandTest {
     }
 
     /**
-     * Test of addingcardtoUpper method, of class Hand.
+     * Test of addingcardtoUpperGood method, of class Hand.
      */
     @Test
     public void testAddingcardtoUpperGood() {
-        System.out.println("addingcardtoUpper");
+        System.out.println("addingcardtoUpperGood");
         Card expected = testCard3;
         Card actual = handTest2.removingCardfromUpper();
         Assert.assertEquals(expected, actual);
         
     }
     /**
-     * Test of addingcardtoUpper method, of class Hand.
+     * Test of addingcardtoUpperBad method, of class Hand.
      */
     @Test
     public void testAddingcardtoUpperBad() {
-        System.out.println("addingcardtoUpper");
+        System.out.println("addingcardtoUpperBad");
         Card expected = testCard4;
         Card actual = handTest2.removingCardfromUpper();
         Assert.assertThat(expected, not(actual));
@@ -91,7 +91,7 @@ public class HandTest {
     }
 
     /**
-     * Test of addingcardtoBelow method, of class Hand.
+     * Test of addingcardtoBelowGood method, of class Hand.
      */
     @Test
     public void testAddingcardtoBelowGood() {
@@ -103,7 +103,7 @@ public class HandTest {
         
     }
      /**
-     * Test of addingcardtoBelow method, of class Hand.
+     * Test of addingcardtoBelowBad method, of class Hand.
      */
     @Test
     public void testAddingcardtoBelowBad() {
@@ -116,11 +116,11 @@ public class HandTest {
     }
 
     /**
-     * Test of removingCardfromUpper method, of class Hand.
+     * Test of removingCardfromUpperGood method, of class Hand.
      */
     @Test
     public void testRemovingCardfromUpperGood() {
-        System.out.println("removingCardfromUpper");
+        System.out.println("removingCardfromUpperGood");
         Card expected = testCard3;
         Card actual = handTest2.removingCardfromUpper();
         assertEquals(expected, actual);
@@ -128,11 +128,11 @@ public class HandTest {
     }
      
     /**
-     * Test of removingCardFromBelow method, of class Hand.
+     * Test of removingCardFromBelowGood method, of class Hand.
      */
     @Test
     public void testRemovingCardFromBelowGood() {
-        System.out.println("removingCardFromBelow");
+        System.out.println("removingCardFromBelowGood");
         Card expected = testCard1;
         Card actual = handTest2.removingCardFromBelow();
         Assert.assertEquals(expected, actual);
@@ -142,22 +142,22 @@ public class HandTest {
     
       
     /**
-     * Test of removingCardFromBelow method, of class Hand.
+     * Test of removingCardFromBelowBad method, of class Hand.
      */
     @Test
     public void testRemovingCardFromBelowBad() {
-        System.out.println("removingCardFromBelow");
+        System.out.println("removingCardFromBelowBad");
         Card expected = testCard4;
         Card actual = handTest2.removingCardFromBelow();
        Assert.assertThat(expected, not(actual));
         
     }
     /**
-     * Test of sizeOfHand method, of class Hand.
+     * Test of sizeOfHandGood method, of class Hand.
      */
     @Test
     public void testSizeOfHandGood() {
-        System.out.println("sizeOfHand");
+        System.out.println("sizeOfHandGood");
         Hand instance = new Hand();
         int expResult = 0;
         int result = instance.sizeOfHand();
@@ -165,11 +165,11 @@ public class HandTest {
         
     }
         /**
-     * Test of sizeOfHand method, of class Hand.
+     * Test of sizeOfHandBad method, of class Hand.
      */
     @Test
     public void testSizeOfHandBad() {
-        System.out.println("sizeOfHand");
+        System.out.println("sizeOfHandBad");
         Hand instance = new Hand();
         int expResult = 2;
         int result = instance.sizeOfHand();
