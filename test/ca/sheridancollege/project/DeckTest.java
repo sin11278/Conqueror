@@ -23,20 +23,20 @@ public class DeckTest {
     }
 
     /**
-     * Test of shufflingDeck method, of class Deck.
+     * Test of shufflingDeckGood method, of class Deck.
      */
     @Test
     public void testShufflingDeckGood() {
-        System.out.println("shufflingDeck");
+        System.out.println("shufflingDeckGood");
        Assert.assertEquals(new Deck().getCards(), testDeck.getCards());
     }
 
 
     /**
-     * Test of getCardsCount method, of class Deck.
+     * Test of getCardsCountGood method, of class Deck.
      */
     @Test
-    public void testGetCardsCountGoodd() {
+    public void testGetCardsCountGood() {
         int expected = 50;
         testDeck.handlingCard();
         testDeck.handlingCard();
@@ -44,7 +44,7 @@ public class DeckTest {
         Assert.assertEquals(expected, actual);
     }
    /**
-     * Test of getCardsCount method, of class Deck.
+     * Test of getCardsCountBad method, of class Deck.
      */
     @Test
     public void testGetCardsCountBad() {
