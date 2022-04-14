@@ -47,8 +47,8 @@ public class PlayerTest {
      */
     @Test
     public void testSetNameGood() {
-        String expected = "JeetGood";
-        testPlayer.setName("JeetGood");
+        String expected = "Jeet";
+        testPlayer.setName("Jeet");
         String actual = testPlayer.getName();
         Assert.assertEquals(expected, actual);
         // TODO review the generated test code and remove the default call to fail.
