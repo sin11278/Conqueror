@@ -28,7 +28,7 @@ public class SuitTest {
         Assert.assertArrayEquals(expected, actual);
     }
     /**
-     * Test of getID method, of class Suit.
+     * Test of getIDGood method, of class Suit.
      */
     @Test
     public void testGetIDGood() {
@@ -37,7 +37,7 @@ public class SuitTest {
         Assert.assertEquals(expected, actual);
     }
         /**
-     * Test of getID method, of class Suit.
+     * Test of getIDBad method, of class Suit.
      */
     @Test
     public void testGetIDBad() {
@@ -46,7 +46,7 @@ public class SuitTest {
         Assert.assertThat(expected, not(actual));
     }
     /**
-     * Test of getNameofSuit method, of class Suit.
+     * Test of getNameofSuitGood method, of class Suit.
      */
     @Test
     public void testGetNameofSuitGood() {
@@ -55,7 +55,7 @@ public class SuitTest {
         Assert.assertEquals(expected, actual);
     }
         /**
-     * Test of getNameofSuit method, of class Suit.
+     * Test of getNameofSuitBad method, of class Suit.
      */
     @Test
     public void testGetNameofSuitBad() {
